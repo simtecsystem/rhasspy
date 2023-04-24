@@ -32,6 +32,7 @@ RUN --mount=type=cache,id=apt-build,target=/var/cache/apt \
         python3 python3-dev python3-setuptools python3-pip python3-venv \
         build-essential swig libatlas-base-dev portaudio19-dev \
         gfortran libopenblas-dev liblapack-dev cython \
+	portaudio19-dev swig libpulse-dev \
         curl ca-certificates
 
 # -----------------------------------------------------------------------------

@@ -644,9 +644,9 @@ AS_IF([test "x${is_pocketsphinx_enabled}x${pocketsphinx_from}" = xyesxsource],
             AC_MSG_ERROR([C compiler is required for Pocketsphinx (build-essential package)])
         ])
 
-        AX_PKG_SWIG([3.0.0], [], [
-            AC_MSG_ERROR([swig is required for Pocketsphinx (swig package)])
-        ])
+#        AX_PKG_SWIG(['3.0.0'], [], [
+#            AC_MSG_ERROR([swig is required for Pocketsphinx (swig package)])
+#        ])
     ])
 
 dnl julius needs a C compiler
