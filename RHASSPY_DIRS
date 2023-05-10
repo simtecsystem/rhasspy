@@ -1,10 +1,10 @@
 rhasspy-asr
-rhasspy-asr-deepspeech
-rhasspy-asr-deepspeech-hermes
+#rhasspy-asr-deepspeech
+#rhasspy-asr-deepspeech-hermes
 rhasspy-asr-kaldi
 rhasspy-asr-kaldi-hermes
-rhasspy-asr-pocketsphinx
-rhasspy-asr-pocketsphinx-hermes
+#rhasspy-asr-pocketsphinx
+#rhasspy-asr-pocketsphinx-hermes
 rhasspy-asr-vosk-hermes
 rhasspy-dialogue-hermes
 rhasspy-fuzzywuzzy
@@ -27,7 +27,7 @@ rhasspy-supervisor
 rhasspy-tts-cli-hermes
 rhasspy-tts-larynx-hermes
 rhasspy-tts-wavenet-hermes
-rhasspy-wake-pocketsphinx-hermes
+#rhasspy-wake-pocketsphinx-hermes
 rhasspy-wake-porcupine-hermes
 rhasspy-wake-precise-hermes
 rhasspy-wake-raven
