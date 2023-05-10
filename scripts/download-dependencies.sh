@@ -16,10 +16,10 @@ for docker_arch in amd64 armv7 arm64 armv6; do
         wget -O "${download}/${julius}" "https://github.com/synesthesiam/prebuilt-apps/releases/download/v1.0/${julius}"
     fi
 
-    kenlm="kenlm-20200308_${docker_arch}.tar.gz"
-    if [[ ! -s "${download}/${kenlm}" ]]; then
-        wget -O "${download}/${kenlm}" "https://github.com/synesthesiam/prebuilt-apps/releases/download/v1.0/${kenlm}"
-    fi
+#    kenlm="kenlm-20210107_${docker_arch}.tar.gz"
+#    if [[ ! -s "${download}/${kenlm}" ]]; then
+#        wget -O "${download}/${kenlm}" "https://github.com/synesthesiam/prebuilt-apps/releases/download/v1.0/${kenlm}"
+#    fi
 
     nanotts="nanotts-20200520_${docker_arch}.tar.gz"
     if [[ ! -s "${download}/${nanotts}" ]]; then
@@ -83,5 +83,19 @@ for docker_arch in amd64 armv7 arm64 armv6; do
         if [[ ! -s "${download}/${deepspeech}" ]]; then
             wget -O "${download}/${deepspeech}" "https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/native_client.${deepspeech_arch}.cpu.linux.tar.xz"
         fi
+    fi
+done
+
+for docker_arch in armv6; do
+    kenlm="kenlm-20200308_${docker_arch}.tar.gz"
+    if [[ ! -s "${download}/${kenlm}" ]]; then
+        wget -O "${download}/${kenlm}" "https://github.com/synesthesiam/prebuilt-apps/releases/download/v1.0/${kenlm}"
+    fi
+done
+
+for docker_arch in amd64 armv7 arm64; do
+    kenlm="kenlm-20210107_${docker_arch}.tar.gz"
+    if [[ ! -s "${download}/${kenlm}" ]]; then
+        wget -O "${download}/${kenlm}" "https://github.com/synesthesiam/prebuilt-apps/releases/download/v1.0/${kenlm}"
     fi
 done
